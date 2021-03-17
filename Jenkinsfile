@@ -1,7 +1,7 @@
 pipeline {
-  agent any
-  stages {
-            stage('DeployToProduction') {
+    agent any
+    stages {
+        stage('DeployToProduction') {
             when {
                 branch 'master'
             }
@@ -33,4 +33,5 @@ pipeline {
                 }
             }
         }
-  
+    }
+}
